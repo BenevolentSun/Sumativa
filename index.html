@@ -3,97 +3,1189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Lovers | Por Daniel Weko</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Warframe | Catálogo de Arsenal Premium</title>
+    <link rel="icon" type="image/png" href="data:image/jpeg;base64,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">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-void: #09090b;
+            --bg-surface: #121217;
+            --bg-surface-hover: #1c1c24;
+            --accent-prime: #d4af37;
+            --accent-energy: #38bdf8;
+            --accent-void: #7c3aed;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --border-energy: rgba(56, 189, 248, 0.2);
+            --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.15);
+            --shadow-prime: 0 0 25px rgba(212, 175, 55, 0.15);
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* ============================================================
+           FONDO GLOBAL — ESTILO BIOPUNK / ESPACIAL OROKIN
+           Grid de circuitos tecnológicos superpuesto sobre void oscuro
+        ============================================================ */
+        body {
+            background-color: var(--bg-void);
+            /* Capas de fondo:
+               1. Gradiente radial azul-energía en esquina superior izquierda (Void)
+               2. Gradiente radial dorado en esquina inferior derecha (Orokin)
+               3. Gradiente radial violeta sutil al centro (energía primordial)
+               4. Grid de circuito Orokin (líneas finas ortogonales)
+               5. Sub-grid decorativo más fino
+            */
+            background-image:
+                radial-gradient(ellipse 70% 60% at -5% 10%, rgba(56, 189, 248, 0.09) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 50% at 105% 90%, rgba(212, 175, 55, 0.07) 0%, transparent 55%),
+                radial-gradient(ellipse 80% 40% at 50% 100%, rgba(124, 58, 237, 0.06) 0%, transparent 60%),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 79px,
+                    rgba(56, 189, 248, 0.04) 79px,
+                    rgba(56, 189, 248, 0.04) 80px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 79px,
+                    rgba(56, 189, 248, 0.04) 79px,
+                    rgba(56, 189, 248, 0.04) 80px
+                );
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, .font-title { font-family: 'Montserrat', sans-serif; }
+
+        /* ============================================================
+           HERO SECTION — ATMÓSFERA CÓSMICA BIOPUNK
+           Imagen estelar sintética con capas de luz Orokin
+        ============================================================ */
+        .hero-section {
+            position: relative;
+            padding: 8rem 0 5rem;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.12);
+
+            /* Fondo multicapa:
+               - Capa inferior: gradiente oscuro base
+               - Nebulosa azul-energía centrada (Void Cascade)
+               - Mancha dorada lateral izquierda (herencia Orokin)
+               - Destello violeta lateral derecho (energía primordial)
+               - Fade to void en borde inferior para transición suave
+            */
+            background:
+                linear-gradient(to bottom, transparent 55%, var(--bg-void) 100%),
+                radial-gradient(ellipse 100% 70% at 50% 0%,  rgba(56, 189, 248, 0.18) 0%, transparent 65%),
+                radial-gradient(ellipse 55% 55% at 0% 60%,   rgba(212, 175, 55, 0.10) 0%, transparent 55%),
+                radial-gradient(ellipse 50% 50% at 100% 30%, rgba(124, 58, 237, 0.10) 0%, transparent 55%),
+                radial-gradient(ellipse 120% 80% at 50% -30%, #0d1f38 0%, var(--bg-void) 80%);
+        }
+
+        /* Estrellas sintetizadas con box-shadow (técnica CSS pura) */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(1px 1px at 15%  20%, rgba(255,255,255,0.6) 0%, transparent 100%),
+                radial-gradient(1px 1px at 32%  8%,  rgba(255,255,255,0.4) 0%, transparent 100%),
+                radial-gradient(1px 1px at 68%  12%, rgba(255,255,255,0.5) 0%, transparent 100%),
+                radial-gradient(1px 1px at 85%  30%, rgba(255,255,255,0.3) 0%, transparent 100%),
+                radial-gradient(1px 1px at 50%  5%,  rgba(255,255,255,0.7) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 22% 45%, rgba(56, 189, 248, 0.8) 0%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 75% 55%, rgba(212, 175, 55, 0.6) 0%, transparent 100%),
+                radial-gradient(1px 1px at 90%  10%, rgba(255,255,255,0.5) 0%, transparent 100%),
+                radial-gradient(1px 1px at 8%   60%, rgba(255,255,255,0.3) 0%, transparent 100%),
+                radial-gradient(1px 1px at 42%  38%, rgba(255,255,255,0.4) 0%, transparent 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Línea decorativa Orokin en la parte superior del hero */
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(to right,
+                transparent 0%,
+                rgba(56, 189, 248, 0.3) 20%,
+                rgba(212, 175, 55, 0.8) 50%,
+                rgba(56, 189, 248, 0.3) 80%,
+                transparent 100%
+            );
+        }
+
+        .hero-section .container { position: relative; z-index: 1; }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-prime) 50%, var(--accent-energy) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            /* Sutil sombra de texto para profundidad */
+            filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.25));
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ============================================================
+           FILTROS, CARDS Y ESTILOS ORIGINALES (preservados)
+        ============================================================ */
+        .filter-container {
+            position: sticky;
+            top: 0;
+            background: rgba(9, 9, 11, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .btn-filter {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 30px;
+            padding: 0.5rem 1.5rem;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .btn-filter:hover, .btn-filter.active {
+            background: var(--text-primary);
+            color: var(--bg-void);
+            border-color: var(--text-primary);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .section-title {
+            font-weight: 900;
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent-prime);
+            padding-left: 15px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .warframe-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .warframe-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background-color: var(--bg-surface-hover);
+            box-shadow: var(--shadow-glow);
+            border-color: rgba(56, 189, 248, 0.3);
+            z-index: 10;
+        }
+
+        .card-img-wrapper {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #27272a 0%, #121217 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+        }
+
+        .warframe-card:hover .card-img-wrapper img { transform: scale(1.1); }
+
+        .card-body { padding: 1.5rem; display: flex; flex-direction: column; }
+
+        .wf-name {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-year { border: 1px solid var(--accent-prime); color: var(--accent-prime); background: transparent; }
+
+        .wf-justification { color: var(--text-secondary); font-size: 0.85rem; font-style: italic; margin-top: 1rem; line-height: 1.5; }
+
+        /* Botón "Ver Habilidades" — renombrado y rediseñado */
+        .btn-trailer {
+            background: transparent;
+            color: var(--accent-energy);
+            border: 1px solid var(--accent-energy);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            transition: var(--transition-smooth);
+            font-size: 0.9rem;
+            padding: 0.7rem;
+            cursor: pointer;
+        }
+
+        .btn-trailer:hover {
+            background: var(--accent-energy);
+            color: var(--bg-void);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ============================================================
+           MODAL MAESTRO DE HABILIDADES — UI PREMIUM
+        ============================================================ */
+
+        /* Overlay oscuro con tinte Void */
+        .modal-backdrop.show { background-color: rgba(0, 0, 0, 0.85); }
+
+        #modalHabilidades .modal-dialog {
+            max-width: 680px;
+        }
+
+        #modalHabilidades .modal-content {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-energy);
+            border-radius: 16px;
+            box-shadow:
+                0 0 60px rgba(56, 189, 248, 0.12),
+                0 0 120px rgba(124, 58, 237, 0.08),
+                inset 0 1px 0 rgba(255,255,255,0.05);
+            overflow: hidden;
+        }
+
+        /* Header del modal — barra de energía Orokin */
+        #modalHabilidades .modal-header {
+            background:
+                linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(124, 58, 237, 0.06) 100%),
+                var(--bg-surface-hover);
+            border-bottom: 1px solid var(--border-energy);
+            padding: 1.5rem 1.75rem;
+            position: relative;
+        }
+
+        #modalHabilidades .modal-header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(to right,
+                transparent,
+                var(--accent-energy) 30%,
+                var(--accent-prime) 50%,
+                var(--accent-energy) 70%,
+                transparent
+            );
+        }
+
+        #modalHabilidades .modal-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, var(--text-primary), var(--accent-energy));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Sub-label "HABILIDADES" encima del título */
+        .modal-eyebrow {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-prime);
+            opacity: 0.85;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        /* Botón de cierre del modal */
+        #modalHabilidades .btn-close {
+            filter: invert(1) brightness(0.6);
+            transition: var(--transition-smooth);
+            opacity: 0.6;
+        }
+        #modalHabilidades .btn-close:hover { opacity: 1; filter: invert(0.7) sepia(1) saturate(5) hue-rotate(180deg); }
+
+        /* Cuerpo del modal */
+        #modalHabilidades .modal-body {
+            padding: 1.75rem;
+            background-color: var(--bg-surface);
+        }
+
+        /* Grilla de habilidades — 2 columnas en pantallas medianas */
+        .abilities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 500px) {
+            .abilities-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Tarjeta individual de habilidad */
+        .ability-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: var(--bg-surface-hover);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 1rem;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ability-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.04) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .ability-item:hover {
+            border-color: rgba(56, 189, 248, 0.25);
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.08);
+        }
+
+        /* Icono de habilidad — orbe de energía numerado */
+        .ability-icon {
+            width: 52px;
+            height: 52px;
+            min-width: 52px;
+            border-radius: 10px;
+            background:
+                linear-gradient(135deg, rgba(56, 189, 248, 0.25) 0%, rgba(124, 58, 237, 0.2) 100%),
+                var(--bg-void);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.2), inset 0 1px 0 rgba(255,255,255,0.08);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 1.3rem;
+            color: var(--accent-energy);
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+        }
+
+        /* Contenido textual de la habilidad */
+        .ability-content { flex: 1; min-width: 0; }
+
+        .ability-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-energy);
+            margin-bottom: 0.3rem;
+            line-height: 1.3;
+        }
+
+        .ability-desc {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Footer del modal */
+        #modalHabilidades .modal-footer {
+            background: var(--bg-surface-hover);
+            border-top: 1px solid var(--border-subtle);
+            padding: 1rem 1.75rem;
+        }
+
+        .modal-footer-note {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            opacity: 0.6;
+            margin: 0;
+        }
+
+        /* Animación de entrada del modal */
+        #modalHabilidades.fade .modal-dialog {
+            transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.35s ease;
+            transform: translateY(-20px) scale(0.97);
+        }
+        #modalHabilidades.show .modal-dialog {
+            transform: translateY(0) scale(1);
+        }
+
+        /* ============================================================
+           ESTADO "SIN DATOS" — Para los 35 warframes sin data aún
+        ============================================================ */
+        .no-data-container {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .no-data-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+            filter: grayscale(1);
+        }
+        .no-data-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .no-data-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <header class="hero-section">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">DOG <span class="text-primary-color">LOVERS</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#historias">Historias</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-lg-3" href="#donar">Donar ahora</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-section d-flex align-items-center">
-        <div class="container text-center text-white">
-            <h1 class="display-3 fw-bold mb-4 animate-up">Daniel Weko</h1>
-            <p class="lead mb-5 px-md-5">Transformando el miedo en ladridos de felicidad. Tu apoyo es la voz de quienes no pueden pedir ayuda.</p>
-            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                <a href="#donar" class="btn btn-primary btn-lg px-5 py-3">Quiero ayudar</a>
-                <a href="#video" class="btn btn-light btn-lg px-5 py-3">Ver impacto</a>
-            </div>
+            <h1 class="hero-title">El Sistema Origen te necesita</h1>
+            <p class="hero-subtitle">
+                Los Warframes son bioarmaduras ancestrales creadas por el Imperio Orokin. 
+                Descubre el catálogo definitivo de armamento cibernético, domina sus habilidades 
+                y forja tu propio camino en el sistema solar. La maestría aguarda.
+            </p>
         </div>
     </header>
 
-    <section class="py-5 bg-light-brown">
-        <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-md-4">
-                    <div class="stat-card p-4">
-                        <h2 class="fw-bold" id="count-rescues">0</h2>
-                        <p class="text-muted">Vidas rescatadas</p>
+    <!-- ============================================================
+         FILTROS
+    ============================================================ -->
+    <nav class="filter-container d-flex justify-content-center gap-2 flex-wrap">
+        <button class="btn-filter active" data-filter="all">Todos</button>
+        <button class="btn-filter" data-filter="ataque">Ataque (DPS)</button>
+        <button class="btn-filter" data-filter="defensa">Defensa / Tanque</button>
+        <button class="btn-filter" data-filter="control">Control</button>
+        <button class="btn-filter" data-filter="soporte">Soporte</button>
+    </nav>
+
+    <!-- ============================================================
+         CATÁLOGO DE WARFRAMES
+    ============================================================ -->
+    <main class="container py-5">
+
+        <!-- ── ATAQUE (DPS) ── -->
+        <section id="ataque" class="category-section mb-5">
+            <h2 class="section-title">Ataque (DPS)</h2>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Excalibur.png!00_rogoG1Uk9x46s7X-HwTx1A" alt="Excalibur"></div><div class="card-body"><h3 class="wf-name">Excalibur</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"El emblema histórico. Equilibrio perfecto entre movilidad y daño cuerpo a cuerpo pesado."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Excalibur">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Mesa.png!00_1joZeE-z65hzxA+TDAO2wg" alt="Mesa"></div><div class="card-body"><h3 class="wf-name">Mesa</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2014</span></div><p class="wf-justification mb-4">"Pistolera imparable. Limpia salas enteras en segundos con sus reguladoras automáticas."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Mesa">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Saryn.png!00_aTUW4RQGey5JEhUVrvRRQQ" alt="Saryn"></div><div class="card-body"><h3 class="wf-name">Saryn</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2012</span></div><p class="wf-justification mb-4">"Pináculo del daño por área. Su propagación viral la hace reina indiscutible del Santuario."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Saryn">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Volt.png!00_NFbM6393XHXjHpCIDm0Qyw" alt="Volt"></div><div class="card-body"><h3 class="wf-name">Volt</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Velocista eléctrico. Indispensable para cacerías de Eidolones y misiones de exterminio rápido."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Volt">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Ash.png!00_cSA7QDlPciC88gEa2uhekQ" alt="Ash"></div><div class="card-body"><h3 class="wf-name">Ash</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2012</span></div><p class="wf-justification mb-4">"Asesino letal. Especializado en ataques sigilosos y sangrado masivo ignorando blindajes."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Ash">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Ember.png!00_af6TVvBndMK+16wcN64jxg" alt="Ember"></div><div class="card-body"><h3 class="wf-name">Ember</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Destrucción pura. Reduce las armaduras a cenizas con meteoritos letales continuos."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Ember">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Mirage.png!00_Q++JHeT3JpPq1xrO97yTzw" alt="Mirage"></div><div class="card-body"><h3 class="wf-name">Mirage</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2014</span></div><p class="wf-justification mb-4">"Maestra de la ilusión. Multiplica su potencia de fuego creando dobles de luz y oscuridad."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Mirage">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Pagemaster.png!00_+SgCVDwtSMQQAOfY70xvKg" alt="Dante"></div><div class="card-body"><h3 class="wf-name">Dante</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2024</span></div><p class="wf-justification mb-4">"El erudito del vacío. Escribe el destino de sus enemigos desatando magia masiva y sangrado."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Dante">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/PaxDuviricus.png!00_ul-L1Z-Qq-Vp9vIV12yA7A" alt="Kullervo"></div><div class="card-body"><h3 class="wf-name">Kullervo</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2023</span></div><p class="wf-justification mb-4">"Ira materializada. Multiplica el daño crítico cuerpo a cuerpo encadenando dolor entre enemigos."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Kullervo">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Dagath.png!00_ahMYHdAn-d7zDKPliKq6AQ" alt="Dagath"></div><div class="card-body"><h3 class="wf-name">Dagath</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-danger text-uppercase">Ataque</span><span class="badge badge-year">2023</span></div><p class="wf-justification mb-4">"La jinete sin rostro. Lanza espectros equinos que arrasan con cualquier resistencia blindada."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Dagath">Ver Habilidades</button></div></article></div>
+
+            </div>
+        </section>
+
+        <!-- ── DEFENSA / TANQUE ── -->
+        <section id="defensa" class="category-section mb-5">
+            <h2 class="section-title">Defensa / Tanque</h2>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Rhino.png!00_fUgJNigwzECHlEI-h9bWLg" alt="Rhino"></div><div class="card-body"><h3 class="wf-name">Rhino</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Muro inquebrantable. Piel de Hierro lo hace inmune al daño y control de multitudes."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Rhino">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Frost.png!00_PrBX6XKzMB45xQGYbdLTYw" alt="Frost"></div><div class="card-body"><h3 class="wf-name">Frost</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Defensa</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Guardián estático. Su Globo de Nieve es legendario por proteger objetivos de defensa."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Frost">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Inaros.png!00_saYdrUEL1X-MtlfENJBlCw" alt="Inaros"></div><div class="card-body"><h3 class="wf-name">Inaros</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2016</span></div><p class="wf-justification mb-4">"Dios del desierto sin escudos. Famoso por su capacidad colosal para acumular vida bruta."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Inaros">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Nidus.png!00_b-8eMNT9a+s0o7cgFVsDyg" alt="Nidus"></div><div class="card-body"><h3 class="wf-name">Nidus</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2016</span></div><p class="wf-justification mb-4">"Heraldo de la infestación. Evoluciona en combate, volviéndose virtualmente inmortal."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Nidus">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Valkyr.png!00_ATEsw2Va6suN12ximV0gbw" alt="Valkyr"></div><div class="card-body"><h3 class="wf-name">Valkyr</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Furia desatada. Su armadura base masiva y su histeria la hacen invulnerable al daño."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Valkyr">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Chroma.png!00_0zqVAyI8G0Pz6AAVSkoDSA" alt="Chroma"></div><div class="card-body"><h3 class="wf-name">Chroma</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2015</span></div><p class="wf-justification mb-4">"Cazador de dragones. Absorbe daño para multiplicar exponencialmente su armadura y ataque."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Chroma">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Grendel.png!00_Hp-EPePTWkLNeAIrUZxs4g" alt="Grendel"></div><div class="card-body"><h3 class="wf-name">Grendel</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2019</span></div><p class="wf-justification mb-4">"El devorador. Consume a sus enemigos para fortificarse y convertirse en una esfera letal."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Grendel">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/IronFrame.png!00_gS2SPZ5ZPj01BmO0pH8u0Q" alt="Hildryn"></div><div class="card-body"><h3 class="wf-name">Hildryn</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2019</span></div><p class="wf-justification mb-4">"Fortaleza de escudos. No usa energía; consume escudos para desatar devastación pesada."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Hildryn">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Qorvex.png!00_HeSSFekitoiroKhvNuL4rQ" alt="Qorvex"></div><div class="card-body"><h3 class="wf-name">Qorvex</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2023</span></div><p class="wf-justification mb-4">"Núcleo radiactivo. Una bestia de hormigón que aplica daño letal pasivo por radiación."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Qorvex">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Atlas.png!00_Nj7Et1j3wLsXoMfj1Iy3kg" alt="Atlas"></div><div class="card-body"><h3 class="wf-name">Atlas</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-warning text-dark text-uppercase">Tanque</span><span class="badge badge-year">2015</span></div><p class="wf-justification mb-4">"El titán de piedra. Invulnerable mientras destroza enemigos a puñetazos e invoca golems."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Atlas">Ver Habilidades</button></div></article></div>
+
+            </div>
+        </section>
+
+        <!-- ── CONTROL DE MULTITUDES ── -->
+        <section id="control" class="category-section mb-5">
+            <h2 class="section-title">Control de Multitudes</h2>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Vauban.png!00_x0Lfyaf1+i2h6XaWJXxumQ" alt="Vauban"></div><div class="card-body"><h3 class="wf-name">Vauban</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Ingeniero táctico. Transforma el mapa en una red de trampas letales y campos de éstasis."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Vauban">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Nova.png!00_5wi+1lIJLVkGnt8AZutijw" alt="Nova"></div><div class="card-body"><h3 class="wf-name">Nova</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Controladora de antimateria. Puede ralentizar a ejércitos enteros para detonarlos en cadena."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Nova">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Nyx.png!00_SUoMwFYrxmCuZ8BBe2ml4Q" alt="Nyx"></div><div class="card-body"><h3 class="wf-name">Nyx</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Manipulación pura. Vuelve a los enemigos unos contra otros, anulando toda ofensiva rival."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Nyx">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Limbo.png!00_ldjRG0Ztj8YNe79v5OU-0A" alt="Limbo"></div><div class="card-body"><h3 class="wf-name">Limbo</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2014</span></div><p class="wf-justification mb-4">"Señor de la Grieta. Congela el tiempo en su plano dimensional para controlar todo asalto."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Limbo">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Khora.png!00_+mABK7VMNIbOt6Q9+Sg5Xw" alt="Khora"></div><div class="card-body"><h3 class="wf-name">Khora</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2018</span></div><p class="wf-justification mb-4">"Domadora sádica. Captura mapas enteros en sus redes de alambre letal y cadenas de acero."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Khora">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Loki.png!00_mBp7Nt-4YHYyiXJWXUg1yQ" alt="Loki"></div><div class="card-body"><h3 class="wf-name">Loki</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2012</span></div><p class="wf-justification mb-4">"El embaucador original. Desarma a ejércitos enteros permanentemente forzando combate a melee."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Loki">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Mag.png!00_FHYuEBaKGBmvlcXoL3q0Rg" alt="Mag"></div><div class="card-body"><h3 class="wf-name">Mag</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2012</span></div><p class="wf-justification mb-4">"Magnetismo violento. Atrapa y destroza los escudos y armaduras usando gravedad comprimida."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Mag">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/BrokenFrame.png!00_FqwcoYz5PuvfDjkFRLff8A" alt="Xaku"></div><div class="card-body"><h3 class="wf-name">Xaku</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2020</span></div><p class="wf-justification mb-4">"Amalgama del vacío. Roba el armamento de sus enemigos para crear una torreta móvil autónoma."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Xaku">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Revenant.png!00_z1m8G4HXZsdUhDm2Gn-aYQ" alt="Revenant"></div><div class="card-body"><h3 class="wf-name">Revenant</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2018</span></div><p class="wf-justification mb-4">"Caminante de Eidolon. Esclaviza enemigos convirtiéndolos en pilares de daño continuo."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Revenant">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Zephyr.png!00_rjNAK4-rth0kgak8s6Pbig" alt="Zephyr"></div><div class="card-body"><h3 class="wf-name">Zephyr</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-info text-dark text-uppercase">Control</span><span class="badge badge-year">2014</span></div><p class="wf-justification mb-4">"Dominio aéreo. Redirige todo el fuego enemigo mientras atrapa a escuadrones en ciclones."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Zephyr">Ver Habilidades</button></div></article></div>
+
+            </div>
+        </section>
+
+        <!-- ── SOPORTE ESTRATÉGICO ── -->
+        <section id="soporte" class="category-section mb-5">
+            <h2 class="section-title">Soporte Estratégico</h2>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Trinity.png!00_c2te8APgKgtbKTgZdiFiOg" alt="Trinity"></div><div class="card-body"><h3 class="wf-name">Trinity</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Sanadora pura. Restaura al instante salud, escudos y energía para mantener vivo al escuadrón."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Trinity">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Wisp.png!00_SAJh+LA4ecYoKGZ1Jw8nVQ" alt="Wisp"></div><div class="card-body"><h3 class="wf-name">Wisp</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2019</span></div><p class="wf-justification mb-4">"Soporte dinámico. Aumenta drásticamente la vida y velocidad de ataque del equipo."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Wisp">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Harrow.png!00_ErIAW5misvCmr9a27RCAqA" alt="Harrow"></div><div class="card-body"><h3 class="wf-name">Harrow</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2017</span></div><p class="wf-justification mb-4">"El sacerdote oscuro. Convierte el daño recibido en multiplicadores de daño crítico masivos."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Harrow">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Citrine.png!00_xzmBPA-+F8fG5ocAKQzb8w" alt="Citrine"></div><div class="card-body"><h3 class="wf-name">Citrine</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2023</span></div><p class="wf-justification mb-4">"Joya defensiva. Proporciona reducción de daño global y generadores masivos de orbes."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Citrine">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Oberon.png!00_JjbFtOx3xeQYOLzcIiRzTA" alt="Oberon"></div><div class="card-body"><h3 class="wf-name">Oberon</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2013</span></div><p class="wf-justification mb-4">"Paladín radiactivo. Ofrece curación prolongada, armadura extra y negación de efectos de estado."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Oberon">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Octavia.png!00_fAUTEhyM+ICMmYqVNadvpw" alt="Octavia"></div><div class="card-body"><h3 class="wf-name">Octavia</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2017</span></div><p class="wf-justification mb-4">"Directora de orquesta. Otorga invisibilidad y mejoras rítmicas al equipo mientras diezma salas."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Octavia">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Odalisk.png!00_+yG0BMQX81K5tkQ66lHabg" alt="Protea"></div><div class="card-body"><h3 class="wf-name">Protea</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2020</span></div><p class="wf-justification mb-4">"Maestra logística. Reabastece munición y energía mientras rebobina el tiempo para sobrevivir."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Protea">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Styanax.png!00_5uud8jd1-B8kPxm7AD8dTw" alt="Styanax"></div><div class="card-body"><h3 class="wf-name">Styanax</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2022</span></div><p class="wf-justification mb-4">"Guerrero espartano. Un soporte ofensivo que genera escudos masivos y energía pasiva al equipo."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Styanax">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Jade.png!00_wVqsFXwhLYkBZ2qEBMy3Lg" alt="Jade"></div><div class="card-body"><h3 class="wf-name">Jade</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2024</span></div><p class="wf-justification mb-4">"Ángel vengador. Cura, revive y buffea a los aliados cantando mientras incinera a los infieles."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Jade">Ver Habilidades</button></div></article></div>
+
+                <div class="col-12 col-md-6 col-lg-3"><article class="card h-100 warframe-card"><div class="card-img-wrapper"><img src="https://content.warframe.com/PublicExport/Lotus/Interface/Icons/StoreIcons/Warframes/Equinox.png!00_vXyvjpXSy-+Uv2SFhlBFVA" alt="Equinox"></div><div class="card-body"><h3 class="wf-name">Equinox</h3><div class="d-flex justify-content-between align-items-center mb-2"><span class="badge bg-success text-uppercase">Soporte</span><span class="badge badge-year">2015</span></div><p class="wf-justification mb-4">"Dualidad pura. Puede acumular daño para curar masivamente o aniquilar todo el mapa en un instante."</p><button class="btn btn-trailer w-100 mt-auto btn-habilidades" data-wf="Equinox">Ver Habilidades</button></div></article></div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         MODAL MAESTRO DE HABILIDADES
+         Un único modal reutilizado dinámicamente por todos los botones.
+         El contenido se inyecta vía JavaScript al hacer clic.
+    ============================================================ -->
+    <div class="modal fade" id="modalHabilidades" tabindex="-1" aria-labelledby="modalHabilidadesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- HEADER -->
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-eyebrow">Habilidades</span>
+                        <h2 class="modal-title" id="modalHabilidadesLabel">Nombre del Warframe</h2>
                     </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
-                <div class="col-md-4">
-                    <div class="stat-card p-4">
-                        <h2 class="fw-bold" id="count-adoptions">0</h2>
-                        <p class="text-muted">Hogares encontrados</p>
-                    </div>
+
+                <!-- BODY: La grilla de habilidades se inyecta aquí por JS -->
+                <div class="modal-body" id="modalHabilidadesBody">
+                    <!-- Contenido dinámico -->
                 </div>
-                <div class="col-md-4">
-                    <div class="stat-card p-4">
-                        <h2 class="fw-bold" id="count-meals">0</h2>
-                        <p class="text-muted">Kilos de amor (alimento)</p>
-                    </div>
+
+                <!-- FOOTER -->
+                <div class="modal-footer">
+                    <p class="modal-footer-note">
+                        Warframe® y todos los elementos relacionados son propiedad de Digital Extremes Ltd.
+                    </p>
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="donar" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800" class="img-fluid rounded-4 shadow-lg" alt="Perro rescatado">
-                </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <h2 class="fw-bold mb-4">¿Por qué Dog Lovers?</h2>
-                    <p class="text-muted">Cada rescate comienza con un acto de fe. Daniel Weko y nuestro equipo trabajan incansablemente para rehabilitar física y emocionalmente a perros en situación de abandono.</p>
-                    <div class="donation-box p-4 border rounded-4 bg-white shadow-sm mt-4">
-                        <h5 class="mb-3">Elige tu impacto diario:</h5>
-                        <div class="btn-group w-100" role="group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
-                            <label class="btn btn-outline-secondary" for="btnradio1">$10 USD</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-                            <label class="btn btn-outline-secondary" for="btnradio2">$25 USD</label>
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
-                            <label class="btn btn-outline-secondary" for="btnradio3">Otro</label>
+
+    <!-- ============================================================
+         SCRIPTS
+    ============================================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    // ================================================================
+    //  BASE DE DATOS DE HABILIDADES
+    //  Completada para los primeros 5 Warframes como ejemplo funcional.
+    //
+    //  ► PARA AÑADIR LOS 35 WARFRAMES RESTANTES:
+    //    Copia el bloque de ejemplo de abajo y pégalo dentro del
+    //    objeto `warframeData`, usando el NOMBRE EXACTO del Warframe
+    //    tal como aparece en el atributo `data-wf` del botón de la
+    //    tarjeta correspondiente (sensible a mayúsculas).
+    //
+    //    Estructura de cada entrada:
+    //    "NombreWarframe": {
+    //        abilities: [
+    //            { num: 1, name: "Nombre Habilidad 1", desc: "Descripción..." },
+    //            { num: 2, name: "Nombre Habilidad 2", desc: "Descripción..." },
+    //            { num: 3, name: "Nombre Habilidad 3", desc: "Descripción..." },
+    //            { num: 4, name: "Nombre Habilidad 4", desc: "Descripción..." }
+    //        ]
+    //    },
+    // ================================================================
+
+    const warframeData = {
+
+        // ── 1. EXCALIBUR ──────────────────────────────────────────────
+        "Excalibur": {
+            abilities: [
+                { num: 1, name: "Corte Fugaz", desc: "Ejecuta un tajo veloz hacia adelante, infligiendo daño de espada en un cono e impulsando al Warframe varios metros. Eficaz para abrir brecha entre formaciones enemigas." },
+                { num: 2, name: "Destello Radial", desc: "Emite un estallido de luz cegadora en todas las direcciones. Los enemigos alcanzados quedan aturdidos y vulnerables durante varios segundos, exponiéndolos a ataques críticos." },
+                { num: 3, name: "Jabalina Radial", desc: "Proyecta lanzas de energía exaltada en todas las direcciones. Cada lanza perfora y ancla al suelo a los enemigos impactados, aplicando el estado Sangrado de manera persistente." },
+                { num: 4, name: "Espada Exaltada", desc: "Invoca el arma definitiva del legado Orokin: una espada de energía pura capaz de desgarrar el tejido de la realidad. Sus ataques generan ondas de choque que cortan múltiples objetivos a distancia." }
+            ]
+        },
+
+        // ── 2. MESA ───────────────────────────────────────────────────
+        "Mesa": {
+            abilities: [
+                { num: 1, name: "Batería Balística", desc: "Activa un modo de recarga pasivo: cada disparo que realice Mesa acumula carga de energía que amplifica el daño de su siguiente habilidad activa de forma exponencial." },
+                { num: 2, name: "Galería de Tiro", desc: "Convierte a un aliado o enemigo en un objetivo señalado. Todos los disparos que reciba el objetivo son redirigidos hacia el enemigo más cercano, convirtiéndolo en un foco de fuego amigo." },
+                { num: 3, name: "Escudo Fragmentado", desc: "Despliega un escudo balístico personal en forma de disco que bloquea proyectiles frontales. Parte del daño absorbido se devuelve como energía o se canaliza hacia las Reguladoras activas." },
+                { num: 4, name: "Pacificadora", desc: "Mesa invoca sus legendarias Reguladoras automáticas y abre fuego en un radio masivo. Las pistolas apuntan y eliminan de forma autónoma a todos los enemigos visibles con una cadencia devastadora." }
+            ]
+        },
+
+        // ── 3. SARYN ──────────────────────────────────────────────────
+        "Saryn": {
+            abilities: [
+                { num: 1, name: "Esporas", desc: "Infecta a un enemigo con esporas explosivas vírales. Al recibir daño, las esporas estallan y se propagan a los enemigos adyacentes, generando una reacción en cadena exponencial por todo el mapa." },
+                { num: 2, name: "Muda", desc: "Saryn arroja su piel como señuelo explosivo mientras la propia Saryn queda libre de todo estado negativo. La cáscara atrae a los enemigos antes de detonar con daño tóxico masivo." },
+                { num: 3, name: "Azote Tóxico", desc: "Genera una nube de veneno corrosivo que contamina el arma de Saryn y las de sus aliados cercanos, añadiendo daño tóxico y cortante a todos los ataques durante la duración activa." },
+                { num: 4, name: "Miasma", desc: "Libera una explosión de esporas tóxicas letales que cubren toda la sala. Los enemigos que ya estén infectados por Esporas sufren el daño multiplicado, limpiando escuadrones enteros en instantes." }
+            ]
+        },
+
+        // ── 4. VOLT ───────────────────────────────────────────────────
+        "Volt": {
+            abilities: [
+                { num: 1, name: "Choque", desc: "Proyecta un rayo de energía eléctrica que encadena entre enemigos adyacentes. Aplica el estado Eléctrico, paralizando brevemente a los objetivos e interrumpiendo sus comunicaciones de combate." },
+                { num: 2, name: "Velocidad", desc: "Canaliza la energía del Vacío para incrementar radicalmente la velocidad de movimiento y cadencia de fuego de Volt y sus aliados cercanos, convirtiendo cada operación en una ofensiva relámpago." },
+                { num: 3, name: "Escudo Eléctrico", desc: "Despliega una barrera de energía estática translúcida. Los disparos que atraviesen el escudo absorben carga eléctrica, amplificando su daño. Fundamental para cacerías de Eidolones en las Llanuras." },
+                { num: 4, name: "Descarga", desc: "Libera toda la energía acumulada en una tormenta eléctrica omnidireccional. Los arcos de plasma rebotan entre enemigos y los aturden durante varios segundos, despejando áreas densamente pobladas." }
+            ]
+        },
+
+        // ── 5. ASH ────────────────────────────────────────────────────
+        "Ash": {
+            abilities: [
+                { num: 1, name: "Shuriken", desc: "Lanza dos shurikens de energía de alta precisión. Cada proyectil tiene una alta probabilidad de aplicar el estado Sangrado, ignorando parte de la armadura del objetivo en el impacto." },
+                { num: 2, name: "Pantalla de Humo", desc: "Rodea a Ash con una cortina de nanitas que lo vuelven completamente invisible. El primer ataque cuerpo a cuerpo realizado desde el sigilo garantiza un multiplicador de daño brutal." },
+                { num: 3, name: "Teletransportación", desc: "Ash se teletransporta instantáneamente hasta un objetivo marcado, ejecutando una puñalada letal al llegar. Puede usarse sobre aliados para acudir rápidamente a su posición de combate." },
+                { num: 4, name: "Tormenta de Espadas", desc: "Ash marca a múltiples enemigos en el área y ejecuta una danza letal de ataques simultáneos con clones de sombra. Aplica el estado Sangrado en todos los objetivos marcados de forma masiva." }
+            ]
+        },
+
+        // ── 6. EMBER ──────────────────────────────────────────────────
+        "Ember": {
+            abilities: [
+                { num: 1, name: "Bola de Fuego", desc: "Carga y desata un proyectil ígneo ardiente que estalla al impactar. Aplica daño de fuego en área y deja a los sobrevivientes ardiendo de pánico." },
+                { num: 2, name: "Inmolación", desc: "Ember se envuelve en una armadura de llamas. A medida que el calor aumenta, gana una reducción masiva de daño, pero consume más energía si alcanza su punto máximo." },
+                { num: 3, name: "Explosión de Fuego", desc: "Golpea el suelo creando una ola de plasma ardiente que atraviesa paredes. Quita armadura a los enemigos permanentemente y reduce el medidor térmico de Inmolación." },
+                { num: 4, name: "Infierno", desc: "Invoca una lluvia de meteoritos abrasadores sobre todos los enemigos a la vista. Cada impacto genera un anillo de fuego duradero que incinera a quien lo cruce." }
+            ]
+        },
+
+        // ── 7. MIRAGE ─────────────────────────────────────────────────
+        "Mirage": {
+            abilities: [
+                { num: 1, name: "Salón de los Espejos", desc: "Crea una comitiva de dobles holográficos que confunden al enemigo y copian los ataques de Mirage, multiplicando exponencialmente su potencia de fuego." },
+                { num: 2, name: "Juego de Manos", desc: "Transforma los objetos caídos en el campo de batalla en trampas explosivas y orbes cegadores, volviendo los recursos del enemigo en su contra." },
+                { num: 3, name: "Eclipse", desc: "Resuena con el entorno. Estar en la luz multiplica su daño de armas a niveles absurdos, mientras que permanecer en las sombras le otorga una evasión y resistencia colosales." },
+                { num: 4, name: "Prisma", desc: "Lanza una esfera de energía pura que dispara láseres en todas direcciones. Puede detonarse manualmente para cegar a los sobrevivientes en un amplio radio." }
+            ]
+        },
+
+        // ── 8. DANTE ──────────────────────────────────────────────────
+        "Dante": {
+            abilities: [
+                { num: 1, name: "Noctua", desc: "Dante invoca su tomo personal, Noctua. Sustituye las armas secundarias y desata fragmentos de conocimiento letales que atraviesan a los enemigos." },
+                { num: 2, name: "Verso Claro", desc: "Teje un hechizo defensivo que otorga Sobreguardia a Dante y sus aliados, protegiéndolos de estados alterados y daño letal." },
+                { num: 3, name: "Verso Oscuro", desc: "Escribe una maldición hiriente en la realidad que inflige daño Cortante en área a los enemigos frente a él, preparándolos para la devastación." },
+                { num: 4, name: "Capítulo Final", desc: "Combina el último Verso Claro y Oscuro para desatar hechizos masivos: desde invocar paragrimms hasta detonar el daño acumulado en los enemigos." }
+            ]
+        },
+
+        // ── 9. KULLERVO ───────────────────────────────────────────────
+        "Kullervo": {
+            abilities: [
+                { num: 1, name: "Avance Furioso", desc: "Teletransportación agresiva hacia un enemigo seguido de un ataque cuerpo a cuerpo potenciado que garantiza críticos destructivos." },
+                { num: 2, name: "Recompensa", desc: "Se rodea de dagas etéreas. Al impactar a enemigos, restauran salud e infunden SobreGuardia; si fallan, hieren al propio Kullervo." },
+                { num: 3, name: "Maldición Vinculante", desc: "Enlaza el destino de los enemigos cercanos. Cualquier daño sufrido por uno de los objetivos encadenados se transfiere al resto instantáneamente." },
+                { num: 4, name: "Tormenta de Ukko", desc: "Invoca una lluvia persistente de puñales espectrales en una amplia zona, destrozando armaduras y diezmando fuerzas estacionarias." }
+            ]
+        },
+
+        // ── 10. DAGATH ────────────────────────────────────────────────
+        "Dagath": {
+            abilities: [
+                { num: 1, name: "Guadaña de Wyrd", desc: "Gira una guadaña giratoria letal que busca enemigos. Reduce su precisión e inflige daño persistente, marcándolos para su final." },
+                { num: 2, name: "Maldición Condenatoria", desc: "Emite una onda de energía maldita que debilita a los enemigos. Amplifica el daño que reciben y los prepara para los espectros de Rakhali." },
+                { num: 3, name: "Espíritu Tumbado", desc: "Dagath entra en una forma espectral al recibir daño letal, reviviendo y lanzando un pulso que aturde a sus agresores. También mejora su daño crítico de forma pasiva." },
+                { num: 4, name: "Caballería de Rakhali", desc: "Invoca cinco espectros equinos que galopan al frente, atropellando a los enemigos malditos y reduciendo drásticamente su armadura." }
+            ]
+        },
+
+        // ── 11. RHINO ─────────────────────────────────────────────────
+        "Rhino": {
+            abilities: [
+                { num: 1, name: "Carga de Rhino", desc: "Embiste a los enemigos frente a él a gran velocidad, derribándolos y absorbiendo daño que fortalecerá su armadura." },
+                { num: 2, name: "Piel de Hierro", desc: "Endurece su estructura con ferrita. Absorbe el daño inicial para crear un escudo inquebrantable que lo hace inmune a cualquier efecto de estado." },
+                { num: 3, name: "Rugido", desc: "Emite un grito de guerra aterrador que incrementa dramáticamente el daño de todas las armas de Rhino y sus aliados en el radio de alcance." },
+                { num: 4, name: "Pisotón", desc: "Golpea el suelo con tal fuerza que altera el flujo del tiempo, suspendiendo a todos los enemigos cercanos en el aire indefensos." }
+            ]
+        },
+
+        // ── 12. FROST ─────────────────────────────────────────────────
+        "Frost": {
+            abilities: [
+                { num: 1, name: "Congelación", desc: "Dispara una ráfaga de hielo sobreenfriado que congela a un solo enemigo en el sitio, inmovilizándolo por completo." },
+                { num: 2, name: "Onda de Hielo", desc: "Desata una ola de picos glaciales a ras de suelo que inflige un gran daño y ralentiza severamente a cualquiera en su camino." },
+                { num: 3, name: "Globo de Nieve", desc: "Genera una cúpula impenetrable de escarcha cristalizada. Atrapa y empuja a los enemigos cercanos, bloqueando proyectiles desde el exterior." },
+                { num: 4, name: "Avalancha", desc: "Congela la humedad de la atmósfera, petrificando en hielo a todos los enemigos cercanos para luego fragmentarlos con una explosión gélida." }
+            ]
+        },
+
+        // ── 13. INAROS ────────────────────────────────────────────────
+        "Inaros": {
+            abilities: [
+                { num: 1, name: "Desecación", desc: "Arroja una maldición de arena que ciega a los enemigos y drena su vitalidad, transfiriéndola a Inaros como salud pura." },
+                { num: 2, name: "Devorar", desc: "Atrapa a un enemigo en arenas movedizas. Inaros o sus aliados pueden consumirlo para recuperar salud; si muere, renace como un espectro de arena leal." },
+                { num: 3, name: "Tormenta de Arena", desc: "Se transforma en un tornado furioso. Absorbe a los enemigos atrapados por Devorar y los arroja brutalmente, haciendo daño masivo en área." },
+                { num: 4, name: "Enjambre de Escarabajos", desc: "Inaros sacrifica su inmensa salud para tejer una armadura biológica de escarabajos. Puede arrojarla para consumir enemigos y curar a su escuadrón." }
+            ]
+        },
+
+        // ── 14. NIDUS ─────────────────────────────────────────────────
+        "Nidus": {
+            abilities: [
+                { num: 1, name: "Virulencia", desc: "Fractura el suelo con un crecimiento micelial. Cada enemigo impactado añade una carga de mutación a Nidus, alimentando su poder latente." },
+                { num: 2, name: "Larva", desc: "Lanza una vaina infestada que estalla y genera tentáculos. Arrastra a todos los enemigos cercanos hacia un mismo punto focal." },
+                { num: 3, name: "Enlace Parasitario", desc: "Vincula a Nidus con un objetivo. Si es un aliado, multiplica el daño de ambos; si es un enemigo, redirige el daño que recibe Nidus hacia su huésped." },
+                { num: 4, name: "Voraz", desc: "Convierte el área en un caldo de cultivo infestado lleno de larvas explosivas que atacan al enemigo y regeneran rápidamente la salud del escuadrón." }
+            ]
+        },
+
+        // ── 15. VALKYR ────────────────────────────────────────────────
+        "Valkyr": {
+            abilities: [
+                { num: 1, name: "Cuerda", desc: "Lanza un gancho de energía que arrastra enemigos hacia ella para rematarlos o la impulsa ágilmente a través del escenario." },
+                { num: 2, name: "Grito de Guerra", desc: "Aúlla con rabia, ralentizando drásticamente a los enemigos cercanos e infundiendo velocidad de ataque y armadura a Valkyr y sus aliados." },
+                { num: 3, name: "Parálisis", desc: "Sacrifica sus propios escudos en un pulso explosivo que aturde a los enemigos, dejándolos vulnerables a ejecuciones cuerpo a cuerpo letales." },
+                { num: 4, name: "Histeria", desc: "Canaliza su tormento en energía pura, volviéndose invulnerable al daño. Destroza a los enemigos usando sus garras de energía exaltadas, absorbiendo su fuerza vital." }
+            ]
+        },
+
+        // ── 16. CHROMA ────────────────────────────────────────────────
+        "Chroma": {
+            abilities: [
+                { num: 1, name: "Grito Espectral", desc: "Exhala un aliento destructivo canalizando su alineación elemental (Fuego, Eléctrico, Tóxico o Frío), devastando a quienes se cruzan en su camino." },
+                { num: 2, name: "Protección Elemental", desc: "Genera un aura basada en su elemento. Otorga salud, escudos, velocidad de recarga o armadura adicional a sí mismo y a aliados cercanos." },
+                { num: 3, name: "Armadura de Vex", desc: "Cuando Chroma recibe daño en los escudos, su armadura aumenta. Cuando recibe daño en salud, el daño de sus armas se multiplica astronómicamente." },
+                { num: 4, name: "Efigie", desc: "Desprende su piel de dragón, que se convierte en un centinela independiente que escupe fuego elemental y ruge para aturdir enemigos, protegiendo un área." }
+            ]
+        },
+
+        // ── 17. GRENDEL ───────────────────────────────────────────────
+        "Grendel": {
+            abilities: [
+                { num: 1, name: "Festín", desc: "Traga enteros a sus enemigos, almacenándolos en su estómago. Grendel drena salud lentamente de sus víctimas, ganando masa y armadura pasiva." },
+                { num: 2, name: "Nutrir", desc: "Consume el sufrimiento de un enemigo engullido para liberar una onda curativa y añadir daño Viral explosivo a las armas del escuadrón." },
+                { num: 3, name: "Regurgitar", desc: "Escupe con violencia a un enemigo atrapado en su estómago como un proyectil tóxico humano, derribando e infectando a quienes estén en su trayectoria." },
+                { num: 4, name: "Pulverizar", desc: "Grendel se envuelve a sí mismo en una esfera impenetrable y rueda por el campo de batalla, aplastando todo a su paso y causando ondas de choque." }
+            ]
+        },
+
+        // ── 18. HILDRYN ───────────────────────────────────────────────
+        "Hildryn": {
+            abilities: [
+                { num: 1, name: "Fuego de Escudo", desc: "Hildryn no usa energía. Carga proyectiles devastadores alimentados por su inmensa capacidad de escudos. Las explosiones castigan a aglomeraciones enemigas." },
+                { num: 2, name: "Saqueo", desc: "Roba y destruye un porcentaje de los escudos y armaduras de todos los enemigos a su alrededor, reabasteciendo y sobrecargando los suyos propios." },
+                { num: 3, name: "Refugio", desc: "Crea un vínculo energético. Si se enlaza a aliados, les otorga escudos adicionales masivos. Si atrapa enemigos, drena sus escudos pasivamente." },
+                { num: 4, name: "Tormenta Aegis", desc: "Se eleva en el aire propulsada por motores de energía, inmovilizando a todos los enemigos debajo de ella y forzándolos a soltar orbes de energía." }
+            ]
+        },
+
+        // ── 19. QORVEX ────────────────────────────────────────────────
+        "Qorvex": {
+            abilities: [
+                { num: 1, name: "Pilar Crisol", desc: "Invoca enormes columnas radiactivas desde el subsuelo. Los pilares pulsan emitiendo daño y ralentizando a cualquier enemigo que se atreva a acercarse." },
+                { num: 2, name: "Contención", desc: "Despliega paredes de hormigón reforzado que se cierran violentamente. Aplasta a los enemigos entre ellas, desatando daño masivo y dejándolos expuestos." },
+                { num: 3, name: "Guardia Espectral", desc: "Envuelve al escuadrón en armadura flotante radiactiva. Protege pasivamente contra efectos de estado negativos, fragmentándose al recibir un golpe." },
+                { num: 4, name: "Crisol Central", desc: "Abre el reactor de su pecho liberando un haz sostenido de fusión nuclear. Cualquier enemigo que ya esté irradiado detonará en explosiones en cadena." }
+            ]
+        },
+
+        // ── 20. ATLAS ─────────────────────────────────────────────────
+        "Atlas": {
+            abilities: [
+                { num: 1, name: "Desprendimiento", desc: "Un ataque físico contundente que envuelve sus puños en roca sólida. Se encadena entre enemigos, otorgándole invulnerabilidad en cada impacto." },
+                { num: 2, name: "Tectónica", desc: "Levanta un sólido muro de piedra desde la tierra que actúa como cobertura. Puede ser reactivado para convertirse en una roca rodante letal." },
+                { num: 3, name: "Petrificar", desc: "Una mirada endurecedora que convierte a todos los enemigos frontales en piedra. Los enemigos petrificados sueltan más curación y recursos al ser destruidos." },
+                { num: 4, name: "Retumbadores", desc: "Invoca a dos golems elementales forjados en escombros. Estas criaturas luchan a cuerpo a cuerpo junto a Atlas, distrayendo y aplastando la oposición." }
+            ]
+        },
+
+        // ── 21. VAUBAN ────────────────────────────────────────────────
+        "Vauban": {
+            abilities: [
+                { num: 1, name: "Nervos Tesla", desc: "Lanza pequeños drones rodantes letales que persiguen al objetivo y se adhieren a él, emitiendo continuas descargas eléctricas que incapacitan escuadrones." },
+                { num: 2, name: "Minador", desc: "Un cinturón de herramientas con cuatro granadas tácticas: Flechas ataduras, plataformas propulsoras, zonas de aceleración y flechettes giratorios desgarradores." },
+                { num: 3, name: "Ataque Fotónico", desc: "Despliega una baliza de puntería que solicita la asistencia de un satélite orbital, desatando un láser de plasma de área devastador sobre las fuerzas enemigas." },
+                { num: 4, name: "Bastilla / Vórtice", desc: "Bastilla suspende a los invasores en una red electromagnética inmovilizadora. Al comprimirse, se vuelve un Vórtice que succiona y aplasta materia y armaduras." }
+            ]
+        },
+
+        // ── 22. NOVA ──────────────────────────────────────────────────
+        "Nova": {
+            abilities: [
+                { num: 1, name: "Estrella Nula", desc: "Genera partículas de antimateria orbitantes que buscan automáticamente atacantes cercanos y detonar al contacto, mitigando además el daño pasivo recibido." },
+                { num: 2, name: "Gota de Antimateria", desc: "Lanza una esfera guiada inestable. Al absorber disparos de armas aliadas, incrementa su potencial destructivo para generar una explosión termonuclear cataclísmica." },
+                { num: 3, name: "Agujero de Gusano", desc: "Rasga la tela del espacio creando un portal de transporte instantáneo para ella y sus aliados, permitiendo emboscadas y escapes imposibles." },
+                { num: 4, name: "Imprimación Molecular", desc: "Impregna a todos los enemigos del mapa con isótopos inestables. Ralentiza drásticamente el flujo temporal a su alrededor y los detona al morir." }
+            ]
+        },
+
+        // ── 23. NYX ───────────────────────────────────────────────────
+        "Nyx": {
+            abilities: [
+                { num: 1, name: "Control Mental", desc: "Invade la psique de un solo enemigo, obligándolo a traicionar y luchar del lado de los Tenno, con daño amplificado y sin poder ser lastimado por aliados." },
+                { num: 2, name: "Proyectiles Psíquicos", desc: "Lanza dagas mentales telequinéticas que no solo infligen daño, sino que también anulan los escudos y desactivan completamente las defensas enemigas." },
+                { num: 3, name: "Caos", desc: "Desata un colapso neuroquímico masivo en un amplio radio, forzando a los enemigos a atacarse salvajemente entre ellos ignorando los objetivos reales." },
+                { num: 4, name: "Absorber", desc: "Nyx entra en trance meditativo y genera un campo de fuerza que absorbe todo el daño recibido. Al levantarse, libera la energía cinética como un estallido devastador." }
+            ]
+        },
+
+        // ── 24. LIMBO ─────────────────────────────────────────────────
+        "Limbo": {
+            abilities: [
+                { num: 1, name: "Desterrar", desc: "Obliga a objetivos amistosos u hostiles a entrar o salir del plano interdimensional (La Grieta), donde no pueden interferir con el mundo físico." },
+                { num: 2, name: "Estasis", desc: "Detiene completamente el tiempo dentro de La Grieta. Todo enemigo y proyectil queda congelado, dejando al escuadrón ejecutar maniobras sin presión." },
+                { num: 3, name: "Oleada Dimensional", desc: "Carga a los enemigos que ya están en la Grieta. Si mueren o salen de ella, desencadenan un efecto radial que empuja a más enemigos al plano dimensional alterno." },
+                { num: 4, name: "Cataclismo", desc: "Desgarra violentamente la frontera entre realidades creando un domo masivo de La Grieta. Los enemigos atrapados sufren daño y quedan sujetos a los efectos de Estasis." }
+            ]
+        },
+
+        // ── 25. KHORA ─────────────────────────────────────────────────
+        "Khora": {
+            abilities: [
+                { num: 1, name: "Látigo de Garra", desc: "Golpea con un restallante látigo biológico. El impacto retumba causando daño devastador a los enemigos cercanos; las interacciones con otras habilidades son letales." },
+                { num: 2, name: "Atrapar", desc: "Ancla a un enemigo en metal líquido. La atadura lo incapacita y se expande para arrastrar violentamente a otros hostiles hacia el mismo punto." },
+                { num: 3, name: "Venari", desc: "Su letal kavat (mascota felina). Comando fluido entre posturas de Ataque, Defensa o Curación. Si es abatida, Venari regenera energía para volver a luchar." },
+                { num: 4, name: "Domo Estrangulador", desc: "Teje una cúpula de cadenas espinosas de acero. Los desafortunados son suspendidos en el aire y golpeados por cada ataque que recibe el domo." }
+            ]
+        },
+
+        // ── 26. LOKI ──────────────────────────────────────────────────
+        "Loki": {
+            abilities: [
+                { num: 1, name: "Señuelo", desc: "Proyecta una copia holográfica indistinguible. Los enemigos priorizan atacar ciegamente al espectro holográfico antes que al escuadrón." },
+                { num: 2, name: "Invisibilidad", desc: "Loki desvía las frecuencias ópticas y sonoras, desvaneciéndose ante el enemigo para ejecutar ataques críticos de sigilo durante varios segundos." },
+                { num: 3, name: "Teletransportación", desc: "Loki intercambia instantáneamente su posición y orientación con cualquier aliado, señuelo o enemigo, desorientando a sus captores y tomando la ventaja." },
+                { num: 4, name: "Desarme Radial", desc: "Emite un pulso electromagnético disruptivo de rango amplio. Destruye permanentemente las armas de fuego enemigas, forzándolos a un torpe combate cuerpo a cuerpo." }
+            ]
+        },
+
+        // ── 27. MAG ───────────────────────────────────────────────────
+        "Mag": {
+            abilities: [
+                { num: 1, name: "Tirón", desc: "Emplea campos magnéticos potentes para arrastrar a los enemigos por el aire y aturdirlos severamente al estrellarlos." },
+                { num: 2, name: "Magnetizar", desc: "Envuelve al objetivo en un vórtice gravitacional. Todo el fuego de armas es redirigido brutalmente hacia el centro, desgarrando a quien esté atrapado." },
+                { num: 3, name: "Polarizar", desc: "Expande un pulso de inversión magnética. Agota escudos, tritura armaduras y regenera las defensas del escuadrón. El metal pulverizado se convierte en proyectiles metralla." },
+                { num: 4, name: "Aplastar", desc: "Atrapa al batallón enemigo en una celda magnética global suspendida y luego comprime violentamente sus propios exoesqueletos aplastando huesos y armaduras." }
+            ]
+        },
+
+        // ── 28. XAKU ──────────────────────────────────────────────────
+        "Xaku": {
+            abilities: [
+                { num: 1, name: "Susurro de Xata", desc: "Xaku canaliza energía primordial del Vacío en todo el arsenal del escuadrón, causando un tipo de daño único que corrompe almas y armaduras." },
+                { num: 2, name: "Agarre de Lohk", desc: "Roban misteriosamente las armas de los enemigos cercanos. El arsenal extraído flota alrededor de Xaku convirtiéndolo en una torreta automática mortal y autónoma." },
+                { num: 3, name: "Lo Perdido", desc: "Activa una de tres facetas ancestrales: Acusar (volviendo al enemigo loco), Observar (inmovilizando y reduciendo defensas), o Negar (rayo destructor concentrado)." },
+                { num: 4, name: "La Vasta Inmensidad", desc: "Se desprende de sus pesadas armaduras rotas en una violenta explosión, ganando gran velocidad e incrementando masivamente su evasión en estado esquelético puro." }
+            ]
+        },
+
+        // ── 29. REVENANT ──────────────────────────────────────────────
+        "Revenant": {
+            abilities: [
+                { num: 1, name: "Cautivar", desc: "Convierte al objetivo en un siervo devoto. El siervo atraerá a sus aliados a la trampa e infectará a otros, creando un escuadrón fantasma al servicio del Eidolon." },
+                { num: 2, name: "Piel Hipnótica", desc: "Recubre al Revenant de un escudo sensitivo imbuido de Vacío puro. Cualquiera que ataque esta barrera quedará paralizado, y Revenant se vuelve inmune al daño mortal." },
+                { num: 3, name: "Drenaje", desc: "Se convierte en una densa niebla de energía viva y atraviesa las filas enemigas. Drena la salud, escudos e integridad física de cada esbirro que atraviesa." },
+                { num: 4, name: "Danza Macabra", desc: "Una erupción masiva y sostenida de haces de luz que emergen de sus dedos. Estos láseres persiguen a los enemigos y adaptan su tipo de daño en base a las defensas rivales." }
+            ]
+        },
+
+        // ── 30. ZEPHYR ────────────────────────────────────────────────
+        "Zephyr": {
+            abilities: [
+                { num: 1, name: "Viento de Cola", desc: "Se lanza con una agilidad aviar letal. Propulsa hacia arriba a velocidades supersónicas, y mientras está flotando, bombardea posiciones terrestres con ventaja táctica." },
+                { num: 2, name: "Estallido Aéreo", desc: "Dispara corrientes de viento cortante ultracomprimido. Puede explotar para empujar o colapsarse formando un sumidero que agrupa a los escuadrones para ser ejecutados." },
+                { num: 3, name: "Turbulencia", desc: "Rodea a Zephyr en una capa de escudo eólico agresivo. Todo fuego enemigo ligero es inmediatamente desviado o anulado debido a la extrema presión barométrica." },
+                { num: 4, name: "Tornados", desc: "Invoca potentes huracanes destructivos y autónomos que rastrean las presencias hostiles, atrapan a los enemigos en vórtices aéreos y comparten el daño entre todos ellos." }
+            ]
+        },
+
+        // ── 31. TRINITY ───────────────────────────────────────────────
+        "Trinity": {
+            abilities: [
+                { num: 1, name: "Fuente de Vida", desc: "Suspende un objetivo en el aire en una estela de biotecnología curativa. Cualquier aliado que ataque la anomalía, se regenerará mediante sanguijuela pasiva vital." },
+                { num: 2, name: "Vampiro de Energía", desc: "Implanta microgeneradores parasíticos dentro de un hostil objetivo. El objetivo sufre una hemorragia pulsante restaurando drásticamente las reservas de energía de su escuadrón." },
+                { num: 3, name: "Enlace", desc: "Almacena energía cinética temporal en Trinity creando una cadena tétrica. Cualquier castigo dirigido hacia ella se proyecta directamente a sus secuestradores cercanos en lugar de ella." },
+                { num: 4, name: "Bendición", desc: "Libera las últimas defensas biomédicas Orokin desde largas distancias. Inmediatamente y en el acto sella heridas profundas e imbuye armadura colosal a sus escuadrones caídos." }
+            ]
+        },
+
+        // ── 32. WISP ──────────────────────────────────────────────────
+        "Wisp": {
+            abilities: [
+                { num: 1, name: "Reservas", desc: "Invocadora mística que llama semillas desde La Grieta dimensional: Cura de vida permanente en zona, incremento inigualable a la velocidad general e inducción aturdidora sobre hostiles." },
+                { num: 2, name: "Fuego Fatuo", desc: "Lanza un fantasma etéreo de ella que sirve a modo de cebo y explorador. Al reactivarse o caducar ciegamente transporta a Wisp al nuevo lugar y deja confundido al oponente." },
+                { num: 3, name: "Oleada de Brecha", desc: "Dispara cegadoras fisuras energéticas con fotones del abismo que incapacita adversarios. Cada enemigo que perezca explotará arrojando chispas a quienes estuvieran atrás de este." },
+                { num: 4, name: "Puerta al Sol", desc: "Abre brutal e inestablemente una ventana subdimensional comunicada con las estrellas, fulminando instantáneamente en masa y desintegrando escudos ante su potente haz estelar puro." }
+            ]
+        },
+
+        // ── 33. HARROW ────────────────────────────────────────────────
+        "Harrow": {
+            abilities: [
+                { num: 1, name: "Condenar", desc: "Emite una corriente de fisuras paralizantes de hierro negro frente a él. Congela a todo su entorno anclándolos firmemente y generando recargas constantes del propio escudo corporal de este." },
+                { num: 2, name: "Penitencia", desc: "El sufrimiento lleva a la santidad. Destroza su blindaje y transfiere escudos al vacío, recompensando al clérigo con la regeneración constante y agresiva de salud del escuadrón por todo el daño efectuado." },
+                { num: 3, name: "Incensario", desc: "Harrow oscila rítmicamente canalizando su propia ira. Una vez acumulado, cada enemigo eliminado por disparos limpios a la cabeza otorga incrementos ridículos en toda la energía restante." },
+                { num: 4, name: "Pacto", desc: "Convoca una barrera de invulnerabilidad momentánea frente a la adversidad letal, y a continuación transfiere matemáticamente ese daño recibido hacia inmensas probabilidades de críticos oscuros letales." }
+            ]
+        },
+
+        // ── 34. CITRINE ───────────────────────────────────────────────
+        "Citrine": {
+            abilities: [
+                { num: 1, name: "Explosión Fracturada", desc: "Dispara gemas cristalinas punzantes como cristales astillados. Destroza brutalmente las extremidades y fuerza a la carne desgarrada a regenerar instantáneamente orbes raros de salud en caída." },
+                { num: 2, name: "Caparazón Preservador", desc: "Rodea al escuadrón al completo con formaciones geométricas resistentes de geodas puras de protección. A cada baja aliada cerca de ella la drástica amortiguación defensiva general continuará apilándose al 90%." },
+                { num: 3, name: "Gema Prismática", desc: "Sienta un enorme prisma luminoso en posición estacionaria que irradia láseres coordinados hacia donde quiera que los Tenno miren o acierten tiros directos." },
+                { num: 4, name: "Cristalizar", desc: "Evoluciona las anomalías convirtiendo la anatomía de cualquier invasor directamente en roca preciosa transparente y altamente porosa. Dejando inmovilizados y exponiendo por igual cristales corporales de extremo daño base." }
+            ]
+        },
+
+        // ── 35. OBERON ────────────────────────────────────────────────
+        "Oberon": {
+            abilities: [
+                { num: 1, name: "Castigo", desc: "Condensa una fracción pequeña de la justicia radioactiva aplastando directamente. Succiona alma forjando meteoros redirigidos a esbirros para crear confusión en gran nivel táctico." },
+                { num: 2, name: "Suelo Sagrado", desc: "Purifica completamente un vasto campo inmerso de flora bendecida luminiscente. Otorga al momento extrema cancelación del estado físico al equipo a la vez que irradia, aísla y envenena mentalmente a cualquier invasor infiel." },
+                { num: 3, name: "Renovación", desc: "Otorga sanación continua a sus compañeros sin importar las limitaciones ni tiempo restante siempre que estén próximos. Regeneración constante ante los impactos." },
+                { num: 4, name: "Ajuste de Cuentas", desc: "Eleva mágicamente y en gravedad nula y somete de brusco azote masivo estrellando su cráneo del contrincante. El violento y brutal sacrificio deja permanentemente el terreno marcado con esferas rojas sanadoras." }
+            ]
+        },
+
+        // ── 36. OCTAVIA ───────────────────────────────────────────────
+        "Octavia": {
+            abilities: [
+                { num: 1, name: "Mazo", desc: "El mejor ataque y provocación en música constante, lanzando una letal discoteca acústica y golpeando rítmicamente en función al volumen y frecuencia devolviéndolo brutalmente en inmensas ondas fatales de vibración extrema." },
+                { num: 2, name: "Resonador", desc: "Invoca un altavoz cilíndrico altamente llamativo que viaja alegremente, atrayendo inexorablemente tras de sí un enjambre desorientado. Interceptando sus balazos frente la desesperación total." },
+                { num: 3, name: "Metrónomo", desc: "Iniciando pistas acústicas invisibles. Otorga en paralelo multiplicadores como escudos veloces y el tan temido buf sigiloso de inmensidad total sí bailan acorde a su tempo estricto." },
+                { num: 4, name: "Amplificador", desc: "Canaliza y sincroniza su área para duplicar tanto volúmenes como los daños fatales. Una pista que destila decibelios y aullidos sónicos de las armas incrementándolos masivamente y otorgando pura devastación en grupo." }
+            ]
+        },
+
+        // ── 37. PROTEA ────────────────────────────────────────────────
+        "Protea": {
+            abilities: [
+                { num: 1, name: "Abanico de Granadas", desc: "Una ingeniera polivalente. Arroja una banda de granadas multifunción; estallidos continuos mutiladores letales ofensivos de estática, o generadores escudos que recargan exponencialmente pasivo aliados." },
+                { num: 2, name: "Artillería Blaze", desc: "Proyecta rápidamente drones centinelas y artilleros anclados invisibles, y detonan cargas fotónicas frente a blindajes pesados; logrando daño incrementado en porcentajes tras los disparos continuados en una fracción de segundos." },
+                { num: 3, name: "Dispensario", desc: "Toma el frente organizando un baúl holográfico. Con frecuencia entrega energía, munición letal avanzada y botiquines raros médicos, vital y autosuficiente soporte inagotable de su grupo tenno de élite." },
+                { num: 4, name: "Ancla Temporal", desc: "Fija ancla a un espacio y tiempo pasados grabando sus condiciones exactas. Lucha desenfrenadamente sin mirar salud e implosiones y, llegado a cero o a placer, retrocede recuperando todas estadísticas originales." }
+            ]
+        },
+
+        // ── 38. STYANAX ───────────────────────────────────────────────
+        "Styanax": {
+            abilities: [
+                { num: 1, name: "Jabalina Axial", desc: "Desenfunda una lanza mortal infundiendo energía para asestar, golpear e incrustar de brutal inercia al oponente directamente hacia paredes, abriendo un remolino concentrado atrapando al resto de víctimas." },
+                { num: 2, name: "Golpe de Escudo", desc: "Empuña una fuerza masiva hacia el frente devastando filas completas y arrancando los escudos duros protectores de sus defensas en instantes devolviéndolos sobre sí a nivel vitalicia en curación y sobreguardia constante a este general en batallas." },
+                { num: 3, name: "Concentración de Recuperación", desc: "Grito inspirador para un guerrero formidable, y desatado a quienes escuchen les genera continuos pulsos de sanación y letalidad por segundo y regeneran permanentemente toda munición táctica necesaria." },
+                { num: 4, name: "Última Batalla", desc: "Suspende a gran altura su pesado arsenal soltando cascadas infernales de cientos jabalinas que llueven masivamente impactando escuadrones dejándolos reducidos a simples explosiones y perforaciones definitivas de guerra militar." }
+            ]
+        },
+
+        // ── 39. JADE ──────────────────────────────────────────────────
+        "Jade": {
+            abilities: [
+                { num: 1, name: "Juicio de Luz", desc: "Dispara una orbe mística celestial cegadora sobre aglomeraciones caóticas. El impacto incinera impuros y expulsa charcos luminiscentes sanadores y regenerativos con pura serenidad que reviven hasta a lo más caídos de gracia del equipo total." },
+                { num: 2, name: "Sinfonía", desc: "Un canto etéreo de alabanzas. Dependiendo de los himnos ejecutados (Aura sanadora intermitente, Fuego incrementando o Destrucción destructora pasiva), Jade intercala constantemente auras colosales pasivas por sus melodías celestiales cantadas de luz de vida." },
+                { num: 3, name: "Mirada de Reproche", desc: "Observa y expulsa castigos a aquellos invasores infieles, deteniendo la gravedad local mediante estallidos purificantes para luego ralentizarlos al estado crítico volviendo la densa masa defensora contrincantes y erradicada ante la vista letal destructora ocular pura celestial luminiscente." },
+                { num: 4, name: "Gloria en las Alturas", desc: "Alza el vuelo flotando con agilidad superior angelical, conjura una llama exaltada pura destructora de la vida en forma de láser divino sostenido. Incinera el mal mediante implosión destructiva al máximo auras de ángel purificador protector radiante destructivo vengativo de fuego y salvación total de vida y muerte total angelical." }
+            ]
+        },
+
+        // ── 40. EQUINOX ───────────────────────────────────────────────
+        "Equinox": {
+            abilities: [
+                { num: 1, name: "Metamorfosis", desc: "El balance perfecto. Cambia veloz de forma y capacidades tácticas. Forma Diurna obtiene multiplicadores daño y velocidad agresivas. Forma Nocturna transfiere defensivas al masivo incremento de las armaduras corporales y los escudos pasivos de supervivencia general total defensivo masivo general." },
+                { num: 2, name: "Descanso y Furia", desc: "El dominio del lado y forma mental general, Diurna excita incrementando en estado iracundo la vulnerabilidad pura para ser asesinados en ráfagas agresivas sin defensa frontal por su agresividad táctica bruta fatal letal, la Nocturna infiere pánico y adormece al invasor forzando parálisis en los enemigos para que mueran dócilmente adormilados durmiendo." },
+                { num: 3, name: "Pacificar y Provocar", desc: "Desprende campos aurales dualísticos y pasivos. En Forma Diurna incrementa pasivo todo daño de habilidades para aliados drásticamente de poder mágico mágico total puro. Forma Nocturna ahoga severamente a todo invasor atenuando drásticamente pasivamente las violencias mortíferas recibidas en forma de absorción de vida continua fatal de las sombras de pura absorción defensa pasiva inagotable continua pura atenuación de impactos." },
+                { num: 4, name: "Remendar y Mutilar", desc: "Una aura devastadora en ambos sentidos según el momento usado táctico dual general de guerra. Diurna rasga de por vida el oxígeno absorbiendo acumulaciones de escuadras enemigas masivas y liberando las cortadas con pura explosión letal, mientras la Nocturna transfiere idénticos acumulados hacia una explosión de vida recuperadora en curaciones al máximo a los aliados caídos y revividos instantáneamente general." }
+            ]
+        }
+    };
+
+
+    // ================================================================
+    //  LÓGICA DEL MODAL MAESTRO
+    // ================================================================
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        // ── Sistema de filtros (preservado del original) ────────────────
+        const filterBtns = document.querySelectorAll('.btn-filter');
+        const sections   = document.querySelectorAll('.category-section');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filterValue = btn.getAttribute('data-filter');
+                sections.forEach(section => {
+                    section.classList.remove('fade-in');
+                    if (filterValue === 'all' || section.id === filterValue) {
+                        section.style.display = 'block';
+                        void section.offsetWidth; // Forzar reflow para animación
+                        section.classList.add('fade-in');
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ── Inicializar la instancia del Modal Bootstrap ────────────────
+        const modalElement    = document.getElementById('modalHabilidades');
+        const modalTitle      = document.getElementById('modalHabilidadesLabel');
+        const modalBody       = document.getElementById('modalHabilidadesBody');
+        const bsModal         = new bootstrap.Modal(modalElement);
+
+        // ── Delegación de eventos: escuchar clicks en todos los botones ─
+        //    Usamos delegación sobre el <main> para mayor rendimiento.
+        document.querySelector('main').addEventListener('click', (event) => {
+            const btn = event.target.closest('.btn-habilidades');
+            if (!btn) return; // Ignorar clicks en otros elementos
+
+            const wfName = btn.getAttribute('data-wf');
+
+            // Actualizar el título del modal
+            modalTitle.textContent = wfName;
+
+            // Obtener datos del Warframe desde la base de datos
+            const data = warframeData[wfName];
+
+            if (data) {
+                // ── Warframe con datos: renderizar grilla de habilidades ──
+                const abilitiesHTML = data.abilities.map(ability => `
+                    <div class="ability-item">
+                        <div class="ability-icon" aria-hidden="true">${ability.num}</div>
+                        <div class="ability-content">
+                            <p class="ability-name">${escapeHtml(ability.name)}</p>
+                            <p class="ability-desc">${escapeHtml(ability.desc)}</p>
                         </div>
-                        <button class="btn btn-primary w-100 mt-4 py-3 fw-bold">CONTINUAR DONACIÓN</button>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                `).join('');
 
-    <footer class="py-4 bg-dark text-white text-center">
-        <p class="mb-0">&copy; 2026 Dog Lovers por Daniel Weko. Todos los derechos reservados.</p>
-    </footer>
+                modalBody.innerHTML = `<div class="abilities-grid">${abilitiesHTML}</div>`;
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+            } else {
+                // ── Warframe sin datos aún: mostrar estado vacío informativo ──
+                modalBody.innerHTML = `
+                    <div class="no-data-container">
+                        <div class="no-data-icon">⚙️</div>
+                        <p class="no-data-title">Datos no disponibles aún</p>
+                        <p class="no-data-text">
+                            Las habilidades de <strong style="color:var(--accent-energy)">${escapeHtml(wfName)}</strong> 
+                            aún no han sido cargadas en la base de datos.<br>
+                            Agrega su entrada en el objeto <code style="color:var(--accent-prime)">warframeData</code> del script.
+                        </p>
+                    </div>
+                `;
+            }
+
+            // Mostrar el modal
+            bsModal.show();
+        });
+    });
+
+    // ── Utilidad: escape de HTML para prevenir XSS ──────────────────
+    function escapeHtml(str) {
+        const map = { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;' };
+        return String(str).replace(/[&<>"']/g, m => map[m]);
+    }
+    </script>
+
 </body>
 </html>
